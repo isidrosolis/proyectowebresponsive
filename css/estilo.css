@@ -109,12 +109,7 @@ header ul li:hover{
     padding-right: 0;
     padding-left: 0;
 }
-.contenedor #agrupador{
-    display:inline;
-    -webkit-flex:1 100%;
-    flex: 100%;
-    flex-direction: row wrap;
-}
+
 .contenedor #segunda{
     width: 100%;
     height: 100%;
@@ -168,7 +163,6 @@ footer{
 }
 /*Para las imagenes de paisaje y retratos*/
 
-}
 
 
 .contenedor #agrupador{
@@ -180,12 +174,14 @@ footer{
     padding-bottom: 5%;
     background-color: #d5c75f;
     border:1px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+    flex-direction: row;
 }
 #imagen5 img{
     width: 20%;
-    display: inline-flex;
-    -webkit-flex: 1 100%;
-    flex: 1 100%;
+    -webkit-flex: 1 20%;
+    flex: 1 20%;
 }
 #imagen1 img{
     -webkit-filter: blur(10px); /* Chrome, Safari, Opera */
@@ -194,15 +190,15 @@ footer{
     -webkit-flex: 1 100%;
     flex: 1 100%;
 
+
 }
 
 #imagen2 img, #imagen4 img, #imagen6 img{
     -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
     filter: grayscale(100%);
-    display: inline;
     width: 20%;
-    -webkit-flex: 1 100%;
-    flex: 1 100%;
+    -webkit-flex: 1 20%;
+    flex: 1 20%;
 
 }
 
@@ -210,8 +206,8 @@ footer{
     -webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
     filter: sepia(90%);
     width: 20%;
-    -webkit-flex: 1 100%;
-    flex: 1 100%;
+    -webkit-flex: 1 20%;
+    flex: 1 20%;
 }
 
 
