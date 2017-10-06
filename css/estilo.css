@@ -40,7 +40,7 @@ h1, h2{
 .contenedor div {
     box-sizing: border-box;
     min-width: 150px;
-    padding: 10px;
+    padding: 11px;
 }
 
 .gris{
@@ -140,6 +140,7 @@ a:active, a:hover{
 .imagenes{
   display:block;
   margin: 0 auto;
+  padding: 0 auto;
   width: 80%;
   border: 2px 2px 2px #82c3a6;
 }
