@@ -3,6 +3,12 @@
  	src:url('DancingScript-Regular.otf');
  }
 
+body{
+  background-color: black;
+  font-family: 'DancingScript-Regular';
+  font-size: 17px;
+}
+
 @-webkit-keyframes slidein {
   0%{
     margin-top: 150%;
@@ -15,300 +21,197 @@
   }
 }
 
- body{
-	background-color: #02010a;
- }
+h1, h2{
+  color: white;
+  text-shadow: 2px 2px 2px #02010a;
+}
 
-.contenedor{
-    width:100%;
-    margin-left: 10%;
+.contenedor {
+    width: 100%;
     max-width: 900px;
-    display: -webkit-flex;      
-    flex-flow: row wrap;    
-    justify-content: center ; 
-    align-items: center ;   
-    align-content: stretch; 
-    border-radius: 10px 10px 0 0;   
-}
-
-#principal{
-    width: 100%;
-    box-sizing: border-box;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    animation-name: slidein;
-    animation-duration: 2s;
-    
-}
-header{
-    height:100px;
-    overflow:hidden;
-    text-align:center;
-    border-radius: 10px 10px 0 0;    
-    background-color: #5b7989;
-    flex: 1 100%;
-}
-header h1{
-    line-height:100px;
-    margin:0;
-    font-size:30px;
-    float:left;
-    width:40%;
-    text-shadow: 2px #02010a;
-    padding-left:5px;
-    box-sizing:border-box;
-    font-family: 'DancingScript-Regular';
-    font-size: 30px;
-    color: white;
-}
-
-header nav{
-    float:right;
-    width:60%;
-    line-height:100px;
-    padding-right:15px;
-    box-sizing:border-box;
-}
-header ul{
-    list-style-type:none;           
-    margin:0;
-    padding:0;      
-    display:flex;
+    padding-left: 15%;
+    padding-right:15%;
     display: -webkit-flex;
+    display: flex;
     -webkit-flex-flow: row wrap;
-    justify-content: flex-end;  
-}
-header ul li{
-    margin:0 5px;   
-    cursor:pointer;
-    color:#D5C5C5;
-    font-size: 30px;
-    font-family: 'DancingScript-Regular';
-}
-ul li a{
-    text-decoration: none;
-}
-header ul li:hover{
-    color:#fff;
+    flex-flow: row wrap;
 }
 
-.contenedor #primera{
-    width: 90%;
-    max-width: 900px
-    margin:0 auto;
-    padding-right: 5%;
-    padding-left: 5%;
-    background-color: #82c3a6;
+.contenedor div {
+    box-sizing: border-box;
+    min-width: 150px;
+    padding: 10px;
 }
-#primera img{
+
+.gris{
+  -webkit-filter:grayscale(100%);
+  filter:grayscale(100%);
+  width: 75%;
+}
+
+
+
+header{
     width: 100%;
-    height: auto;
-    margin:2% auto;
-    padding-top: 0;
-    padding-right: 0;
-    padding-left: 0;
-}
-
-.contenedor #segunda{
-    width: 100%;
-    height: 100%;
-    margin:0 auto;
-    padding-top: 5%;
-    padding-left: 5%;
-    padding-bottom: 5%;
-    background-color: #d5c75f;
-    border:1px;
-}
-#segunda img{
-    width: 40%;
-    padding-left: 2,5%;
-    margin-left: 5%;
-}
-#segunda img:nth-child(1):hover{
-    transform: rotate(10deg);
-    -webkit-box-shadow: 2px 2px #82c3a6;
-}
-#segunda img:nth-child(2):hover{
-    transform: translate(5px,-10px);
-}
-figcaption{
-    font-size: 20px;
-    font-family: 'DancingScript-Regular';
-    color: black;
-    text-decoration: underline;
-    padding-top: 0;
-}
-
- img{
-    -webkit-box-shadow: 2px 2px #02010a;
+    background-color: #5B7989;
+    border-radius: 10px 10px 0px 0px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    animation: slidein;
+    animation-duration: 2s;
 }
 
 footer{
-    width:100%;
-    line-height: 100%;
-    display: inline-block;
-    background-color:#C6d5c5;
-    border-radius: 0 0 10px 10px;
-    font-family: 'DancingScript-Regular';
+  background-color: #C6D5C5;
+  border-radius: 0px 0px 10px 10px;
+  bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
 }
 
-
-#columna1, #columna2, #columna3, #columna4{
-    width: 15%;
-    flex: 1 15%;
+nav{
+  width: 100%;
 }
-#columna3 img{
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+li{
+  display: inline;
+  height: 100%;
+  margin: 0px 10px;
+}
+
+a{
+  display: inline-block;
+  color: white;
+  text-shadow: 2px 2px 2px #02010A
+}
+
+a:link, a:visited{
+  text-decoration: underline;
+}
+
+a:active, a:hover{
+  text-decoration: none;
+}
+
+.encabezado, .navegacion, .primer-imagen , .segunda-imagen, .pie, .columna{
+  width: 100%;
+}
+
+.encabezado, .encabezado{
+  text-align: center;
+}
+.navegacion{
+    float: right;
+}
+.primer-imagen{
+  background-color: #82c3a6;
+  text-align: center;
+}
+
+.segunda-imagen{
+  background-color: #d5c75f;
+  border: 1px 1px 1px #d5c75f;
+  text-align: center;
+}
+
+.sombra-imagen{
+  -webkit-filter: drop-shadow(10px 10px 2px black);
+  filter: drop-shadow(10px 10px 2px black);
+  align-items:center;
+}
+
+.imagenes{
+  display:block;
+  margin: 0 auto;
+  width: 80%;
+  border: 2px 2px 2px #82c3a6;
+}
+
+.paisaje:hover{
+  transform: rotate(10deg);
+  -webkit-filter: drop-shadow(10px 10px 2px #82c3a6);
+  filter: drop-shadow(10px 10px 2px #82c3a6);
+}
+
+.retrato:hover{
+  transform: translate(20px, -5px);
+  -webkit-filter: drop-shadow(10px 10px 2px #82c3a6);
+  filter: drop-shadow(10px 10px 2px #82c3a6);
+}
+
+.sepia{
+  -webkit-filter:sepia(90%);
+  filter:blur(90%);
+  width: 75%;
+}
+
+.blur{
+  -webkit-filter:blur(10px);
+  filter:blur(10px);
+  width: 75%;
+}
+
+.sinfiltro{
+  width: 75%;
+}
+
+.pie{
+    max-width: 900%;
+}
+.pie img{
     width: 7%;
 }
-/*Para las imagenes de paisaje y retratos*/
-
-
-
-.contenedor #agrupador{
-    width: 100%;
-    height: 100%;
-    margin:0 auto;
-    padding-top: 5%;
-    padding-left: 5%;
-    padding-bottom: 5%;
-    background-color: #d5c75f;
-    border:1px;
-    -webkit-flex: 1 100%;
-    flex: 1 100%;
-    flex-direction: row;
-}
-#imagen5 img{
-    width: 20%;
-    -webkit-flex: 1 20%;
-    flex: 1 20%;
-}
-#imagen1 img{
-    -webkit-filter: blur(10px); /* Chrome, Safari, Opera */
-    filter: blur(10px);
-    width: 20%;
-    -webkit-flex: 1 100%;
-    flex: 1 100%;
-
-
+.columna{
+  background-color: #d5c75f;
+  border: 1px 1px 1px #d5c75f;
+  text-align: center;
 }
 
-#imagen2 img, #imagen4 img, #imagen6 img{
-    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-    filter: grayscale(100%);
-    width: 20%;
-    -webkit-flex: 1 20%;
-    flex: 1 20%;
-
-}
-
-#imagen3 img{
-    -webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
-    filter: sepia(90%);
-    width: 20%;
-    -webkit-flex: 1 20%;
-    flex: 1 20%;
-}
-
-
-/*fin*/
-@media screen and (max-width: 899px) {
-    h1{
-        order: 0;
-        clear: both;
+@media all and (min-width: 900px) {
+    .encabezado {
+        width: 70%;
     }
-    header{
-        order: 1;
-    }
-
-    header nav{
-        line-height:31px;
-    }
-    header ul{  
-        flex-flow: column wrap; 
-        align-items: center; 
-        justify-content: center;    
-    }
-    header ul li{
-        margin-bottom:2px;
-    }
-
-    header h1{      
-        font-size: 25px;  
-        flex:1
-        order:1;
-    }
-    .contendeor{
+    .navegacion {
+        text-align: center;
         align-content: center;
+        align-items: center;
+        width: 30%;
     }
-    #principal{
-        flex: 1 100%;
-        order:2;        
-    }
-    .contenedor img{
-        width: 40;
-        flex-flow: column;
-    }
-    footer{
-        flex:1 100%; 
-        order:4;
-        display: inline-flex;
+    li{
+     text-align:center;
+     }
+
+    .primer-imagen{
+        width: 100%;
     }
 
-    .contenedor{
-        width: 100%;
+    .segunda-imagen{
+        width: 50%;
     }
-    .contenedor #segunda{
-        order: 3;
+    .pie{
+        width: 25%;
     }
-    #segunda img{
-        width: 70%;
-        flex: 1 100%;
-        flex-flow: column;
-    }
-    #columna1{
-        width: 100%;
-        flex: 1 100%;
-    }
-    #columna2{
-        width: 100%;
-        flex: 1 100%;        
-    }
-    #columna3 {
-        width: 100%;
-        flex: 1 100%;        
+    .columna{
+     width: 33%;
     }
 
-/*Para las imagenes de paisaje y retratos*/
-    .contenedor #agrupador{
-        order: 3;
-    }
-    .contenedor #agrupador div[id*="imagen"] {
-        width: 100%;
-        flex: 1 100%;
-    }
-    #imagen1 img{
-        width: 70%;
-        flex: 1 100%;
-    }
-    #imagen2 img {
-        width: 70%;
-        flex: 1 100%;
-    }
-    #imagen3 img {
-        width: 70%;
-        flex: 1 100%;
-    }
-    #imagen4 img{
-        width: 70%;
-        flex: 1 100%;
-    }
-    #imagen5 img{
-        width: 70%;
-        flex: 1 100%;
-    }
-    #imagen6 img{
-        width: 70%;
-        flex: 1 100%;
+  
+    .container {
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
