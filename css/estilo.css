@@ -4,7 +4,7 @@
  }
 
 body{
-  background-color: black;
+  background-color: #02010a;
   font-family: 'DancingScript-Regular';
   font-size: 17px;
 }
@@ -40,16 +40,14 @@ h1, h2{
 .contenedor div {
     box-sizing: border-box;
     min-width: 150px;
-    padding: 11px;
+    padding: 10px;
 }
 
 .gris{
-  -webkit-filter:grayscale(100%);
-  filter:grayscale(100%);
-  width: 75%;
+    -webkit-filter:grayscale(100%);
+     filter:grayscale(100%);
+     width: 75%;
 }
-
-
 
 header{
     width: 100%;
@@ -64,12 +62,19 @@ header{
 }
 
 footer{
-  background-color: #C6D5C5;
-  border-radius: 0px 0px 10px 10px;
-  bottom: 10px;
-  padding: 10px;
-  width: 100%;
-  display: -webkit-flex;
+    background-color: #C6D5C5;
+    border-radius: 0px 0px 10px 10px;
+    bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+section{
+    width: 100%;
+    display: -webkit-flex;
     display: flex;
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
@@ -77,7 +82,7 @@ footer{
 
 nav{
   width: 100%;
-  padding-top: 10%;
+  padding-top: 15%;
 }
 
 ul{
@@ -96,7 +101,7 @@ li{
 a{
   display: inline-block;
   color: white;
-  text-shadow: 2px 2px 2px #02010A
+  text-shadow: 2px 2px 2px #02010a
 }
 
 a:link, a:visited{
@@ -109,92 +114,100 @@ a:active, a:hover{
 
 .encabezado, .navegacion, .primer-imagen,
  .segunda-imagen, .pie, .columna{
-  width: 100%;
+    width: 100%;
 }
+
 .columna{
     width: 101%;
 }
+
 .encabezado{
-  text-align: center;
+    text-align: center;
 }
+
 .navegacion{
     float: right;
 }
+
 .primer-imagen{
-  background-color: #82c3a6;
-  text-align: center;
+    background-color: #82c3a6;
+    text-align: center;
 }
 
 .segunda-imagen{
-  background-color: #d5c75f;
-  border: 1px 1px 1px #d5c75f;
-  text-align: center;
+    background-color: #d5c75f;
+    border: 1px 1px 1px #d5c75f;
+    text-align: center;
 }
 
 .sombra-imagen{
-  -webkit-filter: drop-shadow(10px 10px 2px black);
-  filter: drop-shadow(10px 10px 2px black);
-  align-items:center;
+    -webkit-filter: drop-shadow(10px 10px 2px black);
+    filter: drop-shadow(10px 10px 2px black);
+    align-items:center;
 }
 
 .imagenes{
-  display:block;
-  margin: 0 auto;
-  padding: 0 auto;
-  width: 80%;
-  border: 2px 2px 2px #82c3a6;
+    display:block;
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 80%;
+    border: 2px 2px 2px #82c3a6;
 }
 
 .paisaje:hover{
-  transform: rotate(10deg);
-  -webkit-filter: drop-shadow(10px 10px 2px #82c3a6);
-  filter: drop-shadow(10px 10px 2px #82c3a6);
+    transform: rotate(10deg);
+    -webkit-filter: drop-shadow(10px 10px 2px #82c3a6);
+    filter: drop-shadow(10px 10px 2px #82c3a6);
 }
 
 .retrato:hover{
-  transform: translate(20px, -5px);
-  -webkit-filter: drop-shadow(10px 10px 2px #82c3a6);
-  filter: drop-shadow(10px 10px 2px #82c3a6);
+    transform: translate(20px, -5px);
+    -webkit-filter: drop-shadow(10px 10px 2px #82c3a6);
+    filter: drop-shadow(10px 10px 2px #82c3a6);
 }
 
 .sepia{
-  -webkit-filter:sepia(90%);
-  filter:blur(90%);
-  width: 75%;
+    -webkit-filter:sepia(90%);
+    filter:blur(90%);
+    width: 75%;
 }
 
 .blur{
-  -webkit-filter:blur(10px);
-  filter:blur(10px);
-  width: 75%;
+    -webkit-filter:blur(10px);
+    filter:blur(10px);
+    width: 75%;
 }
 
 .sinefecto{
-  width: 75%;
+    width: 75%;
 }
 
 .pie{
-    max-width: 900%;
+    max-width: 900px;
 }
+
 .pie img{
     width: 7%;
 }
+
 .columna{
-  background-color: #d5c75f;
-  border: 1px 1px 1px #d5c75f;
-  text-align: center;
+    text-align: center;
+    background-color: #d5c75f;
+    border: 1px 1px 1px #d5c75f;
 }
 
 @media all and (min-width: 900px) {
     .encabezado {
         width: 70%;
     }
+
     .navegacion {
         text-align: center;
         align-content: center;
         align-items: center;
         width: 30%;
     }
+
     li{
         text-align:center;
      }
@@ -206,14 +219,18 @@ a:active, a:hover{
     .segunda-imagen{
         width: 50%;
     }
+
     .pie{
         width: 25%;
     }
+
     .columna{
-     width: 33%;
+        width: 33.33%;
     }
+
     .contenedor {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
+    }
 }
